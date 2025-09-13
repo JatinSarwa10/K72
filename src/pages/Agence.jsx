@@ -10,17 +10,20 @@ const Agence = () => {
   const imageRef = useRef(null)
   
   const imageArray = [
-    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/Lawrence_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/Michele_480X640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/MEL_480X640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Isa_640X960-640x960.jpg',
+    'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
+    'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
   ]
 
   useGSAP(()=>{
@@ -30,6 +33,11 @@ const Agence = () => {
         start:"top 30%",
         end:"top -70%",
         pin:true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: 'transform',
+        anticipatePin:1,
+        invalidateOnRefresh:true,
         scrub:true,
         onUpdate:(elem)=>{
           let imageIndex;
@@ -45,14 +53,14 @@ const Agence = () => {
   })
 
   return (
-    <div>
-      <div className='section1'>
-        <div ref={imageDivRef} className='absolute w-[14vw] h-[20vw] overflow-hidden rounded-4xl   top-60 left-110'>
+    <div >
+      <div className='section1  relative py-1'>
+        <div ref={imageDivRef} className='absolute w-[14vw] h-[20vw] overflow-hidden rounded-4xl top-60 left-110'>
           <img ref={imageRef} className='h-full w-full object-cover' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
         </div>
         <div className='relative font-[font2]'>
           <div className=' mt-[55vh]'>
-            <h1 className='text-[20vw] text-white text-center uppercase leading-[18vw]'>SEVEN7Y <br />
+            <h1 className='text-[20vw]  text-center uppercase leading-[18vw]'>SEVEN7Y <br />
     TWO</h1>
           </div>
           <div className='pl-[40%] mt-10 '>
