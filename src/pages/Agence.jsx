@@ -53,18 +53,18 @@ const Agence = () => {
   })
 
   return (
-    <div >
-      <div className='section1  relative py-1'>
-        <div ref={imageDivRef} className='absolute w-[14vw] h-[20vw] overflow-hidden rounded-4xl top-60 left-110'>
+    <div className='overflow-x-hidden'>
+      <div className='section1 relative py-1 px-4 sm:px-6 lg:px-8'>
+        <div ref={imageDivRef} className='absolute w-[25vw] h-[35vw] sm:w-[20vw] sm:h-[28vw] lg:w-[14vw] lg:h-[20vw] overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-4xl top-40 sm:top-48 lg:top-60 left-4 sm:left-8 lg:left-110'>
           <img ref={imageRef} className='h-full w-full object-cover' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />
         </div>
         <div className='relative font-[font2]'>
-          <div className=' mt-[55vh]'>
-            <h1 className='text-[20vw]  text-center uppercase leading-[18vw]'>SEVEN7Y <br />
+          <div className='mt-[45vh] sm:mt-[50vh] lg:mt-[55vh]'>
+            <h1 className='text-[18vw] sm:text-[20vw] lg:text-[20vw] text-center uppercase leading-[16vw] sm:leading-[18vw] lg:leading-[18vw] px-4'>SEVEN7Y <br />
     TWO</h1>
           </div>
-          <div className='pl-[40%] mt-10 '>
-            <p className='text-5xl '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
+          <div className='mt-10 sm:mt-12 lg:mt-10 px-4 sm:px-6 lg:pl-[40%]'>
+            <p className='text-lg sm:text-3xl lg:text-5xl leading-relaxed sm:leading-relaxed lg:leading-normal'>We're inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
           </div>
         </div>
       </div>
