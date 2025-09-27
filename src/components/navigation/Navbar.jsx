@@ -16,21 +16,19 @@ const Navbar = () => {
                     </svg>
                 </div>
             </div>
-            <div onClick={()=>{
-                setNavOpen(true)
-            }} onMouseEnter={() => {
-                navGreenRef.current.style.height = '100%'
-            }}
-                onMouseLeave={() => {
-                    navGreenRef.current.style.height = '0%'
-                }}
-                className='h-10 sm:h-12 lg:h-16 bg-black relative w-32 sm:w-40 lg:w-[16vw] cursor-pointer'>
-                <div ref={navGreenRef} className='bg-[#D3FD50] transition-all absolute top-0 h-0 w-full'></div>
-                <div className='relative h-full px-4 sm:px-6 lg:px-12 flex flex-col justify-center items-end gap-0.5 sm:gap-1 lg:gap-1.5'>
-                    <div className="w-8 sm:w-10 lg:w-18 h-0.5 bg-white"></div>
-                    <div className="w-5 sm:w-6 lg:w-10 h-0.5 bg-white"></div>
-                </div>
-            </div>
+           <div 
+  onClick={() => setNavOpen(true)}
+  onMouseEnter={() => navGreenRef.current.style.height = '100%'}
+  onMouseLeave={() => navGreenRef.current.style.height = '0%'}
+  className='fixed top-0 right-0 h-10 sm:h-12 lg:h-16 bg-black w-32 sm:w-40 lg:w-[16vw] cursor-pointer'>
+  
+  <div ref={navGreenRef} className='bg-[#D3FD50] transition-all absolute top-0 h-0 w-full'></div>
+  
+  <div className='relative h-full px-4 sm:px-6 lg:px-12 flex flex-col justify-center items-end gap-0.5 sm:gap-1 lg:gap-1.5'>
+    <div className="w-8 sm:w-10 lg:w-18 h-0.5 bg-white"></div>
+    <div className="w-5 sm:w-6 lg:w-10 h-0.5 bg-white"></div>
+  </div>
+</div>
         </div>
     )
 }
